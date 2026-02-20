@@ -1,0 +1,520 @@
+Berikut adalah kode HTML yang sudah diperbarui. Saya telah mengganti bagian foto pada **Tentang Kami** dengan link gambar yang Anda berikan.
+
+Silakan salin kode di bawah ini:
+
+```html
+<!doctype html>
+<html lang="id" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Praktek Hipnoterapi Aribowo Batam - Jasa psikologi, hipnoterapi profesional, klinik psikologi, dan penyembuhan psikologis terpercaya di Batam, Kepulauan Riau.">
+  <meta name="keywords" content="jasa psikologi batam, jasa hipnoterapi batam, klinik psikologi batam, penyembuhan psikologis, hipnoterapis batam, konseling batam, terapi mental batam">
+  <title>Praktek Hipnoterapi Aribowo Batam | Jasa Psikologi &amp; Hipnoterapi Profesional</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&amp;family=DM+Serif+Display:ital@0;1&amp;display=swap" rel="stylesheet">
+  <style>
+.font-heading { font-family: 'DM Serif Display', serif; letter-spacing: -0.02em; }
+.font-body { font-family: 'Outfit', sans-serif; }
+.gradient-vibrant { background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 50%, #F59E0B 100%); }
+.gradient-dark { background: linear-gradient(135deg, #1E1B4B 0%, #2E1065 100%); }
+.glow-effect { box-shadow: 0 0 60px rgba(139, 92, 246, 0.3); }
+.slide-up { animation: slideUp 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; opacity: 0; }
+@keyframes slideUp {
+  from { transform: translateY(60px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.card-tilt:hover { transform: perspective(1000px) rotateY(5px) rotateX(-5px); }
+.card-tilt { transition: transform 0.4s cubic-bezier(0.23, 1, 0.320, 1); }
+.pulse-glow { animation: pulseGlow 2s ease-in-out infinite; }
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 20px rgba(139, 92, 246, 0.5); }
+  50% { box-shadow: 0 0 40px rgba(139, 92, 246, 0.8); }
+}
+.text-gradient { background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
+.stagger-5 { animation-delay: 0.5s; }
+body { box-sizing: border-box; }
+</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full font-body">
+  <div id="app-wrapper" class="w-full h-full overflow-auto" style="background: #0F0F1E;"><!-- Header Navigation -->
+   <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" style="background: rgba(15, 15, 30, 0.8); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(139, 92, 246, 0.1);">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="flex justify-between items-center h-16 sm:h-20">
+      <div class="flex items-center space-x-4">
+       <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-gradient-vibrant flex items-center justify-center p-0.5">
+        <div class="w-full h-full rounded-lg bg-gradient-dark flex items-center justify-center"><span class="font-heading text-xl sm:text-2xl font-bold text-transparent bg-gradient-vibrant bg-clip-text">A</span>
+        </div>
+       </div>
+       <div>
+        <h1 id="nav-title" class="font-heading font-bold text-lg sm:text-xl text-white">Aribowo</h1>
+        <p class="text-xs sm:text-sm text-purple-400">Hipnoterapi &amp; Psikologi</p>
+       </div>
+      </div>
+      <div class="hidden md:flex items-center space-x-8"><a href="#layanan" class="text-sm font-medium text-gray-400 hover:text-purple-400 transition-colors">Layanan</a> <a href="#tentang" class="text-sm font-medium text-gray-400 hover:text-purple-400 transition-colors">Tentang</a> <a href="#testimoni" class="text-sm font-medium text-gray-400 hover:text-purple-400 transition-colors">Testimoni</a> <a href="#kontak" class="px-6 py-2.5 rounded-xl bg-gradient-vibrant text-white text-sm font-semibold transition-all hover:scale-105">Konsultasi</a>
+      </div><button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-purple-400">
+       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+       </svg></button>
+     </div>
+    </nav><!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-t" style="background: rgba(15, 15, 30, 0.95); border-color: rgba(139, 92, 246, 0.2);">
+     <div class="px-4 py-4 space-y-3"><a href="#layanan" class="block py-2 text-sm font-medium text-gray-400 hover:text-purple-400 transition-colors">Layanan</a> <a href="#tentang" class="block py-2 text-sm font-medium text-gray-400 hover:text-purple-400 transition-colors">Tentang</a> <a href="#testimoni" class="block py-2 text-sm font-medium text-gray-400 hover:text-purple-400 transition-colors">Testimoni</a> <a href="#kontak" class="block py-3 text-center rounded-xl bg-gradient-vibrant text-white text-sm font-semibold">Konsultasi Sekarang</a>
+     </div>
+    </div>
+   </header><!-- Hero Section -->
+   <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+    <div class="absolute inset-0 opacity-30">
+     <div class="absolute top-20 left-10 w-80 h-80 rounded-full" style="background: radial-gradient(circle, #8B5CF6 0%, transparent 70%); filter: blur(80px);"></div>
+     <div class="absolute bottom-40 right-20 w-96 h-96 rounded-full" style="background: radial-gradient(circle, #EC4899 0%, transparent 70%); filter: blur(80px);"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+     <div class="slide-up stagger-1">
+      <p class="text-purple-400 text-sm sm:text-base font-semibold uppercase tracking-widest">Solusi Kesehatan Mental Terdepan</p>
+     </div>
+     <h1 id="hero-title" class="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white my-8 slide-up stagger-2 leading-tight">Transformasi <span class="text-gradient">Pikiran</span> Anda</h1>
+     <p id="hero-tagline" class="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-4 slide-up stagger-3">Solusi Penyembuhan Psikologis Profesional untuk Kesehatan Mental yang Lebih Baik</p>
+     <p class="text-base sm:text-lg text-gray-400 max-w-2xl mx-auto mb-12 slide-up stagger-4">Hipnoterapi dan konseling profesional dari hipnoterapis bersertifikat untuk membantu Anda mengatasi trauma, kecemasan, dan berbagai tantangan psikologis.</p>
+     <div class="flex flex-col sm:flex-row gap-4 justify-center items-center slide-up stagger-5"><a href="#kontak" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-vibrant text-white font-semibold text-lg transition-all hover:scale-105 hover:shadow-2xl"> Mulai Sekarang </a> <a href="#layanan" class="w-full sm:w-auto px-8 py-4 rounded-xl border border-purple-500 text-purple-400 font-semibold text-lg transition-all hover:bg-purple-500 hover:bg-opacity-10"> Lihat Layanan → </a>
+     </div>
+     <div class="mt-20 grid grid-cols-3 gap-8 slide-up stagger-6 max-w-2xl mx-auto">
+      <div class="p-6 rounded-2xl" style="background: rgba(139, 92, 246, 0.1); border: 1px solid rgba(139, 92, 246, 0.2);">
+       <div class="font-heading text-3xl sm:text-4xl font-bold text-purple-400">
+        500+
+       </div>
+       <p class="text-sm text-gray-400 mt-2">Klien Terbantu</p>
+      </div>
+      <div class="p-6 rounded-2xl" style="background: rgba(139, 92, 246, 0.1); border: 1px solid rgba(139, 92, 246, 0.2);">
+       <div class="font-heading text-3xl sm:text-4xl font-bold text-purple-400">
+        10+
+       </div>
+       <p class="text-sm text-gray-400 mt-2">Tahun Pengalaman</p>
+      </div>
+      <div class="p-6 rounded-2xl" style="background: rgba(139, 92, 246, 0.1); border: 1px solid rgba(139, 92, 246, 0.2);">
+       <div class="font-heading text-3xl sm:text-4xl font-bold text-purple-400">
+        98%
+       </div>
+       <p class="text-sm text-gray-400 mt-2">Kepuasan Klien</p>
+      </div>
+     </div>
+    </div>
+   </section><!-- Services Section -->
+   <section id="layanan" class="py-20 sm:py-32 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="text-center mb-20">
+      <p class="text-purple-400 text-sm font-semibold uppercase tracking-widest">Layanan Kami</p>
+      <h2 class="font-heading text-4xl sm:text-5xl md:text-6xl font-bold text-white mt-4 mb-6">Spektrum Penuh<br>
+       Layanan Psikologi</h2>
+      <p class="text-lg text-gray-400 max-w-2xl mx-auto">Dari hipnoterapi klinis hingga pengembangan diri, kami hadirkan solusi komprehensif untuk kesehatan mental Anda</p>
+     </div>
+     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"><!-- Service 1 -->
+      <div class="card-tilt group rounded-2xl p-8 transition-all duration-500" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(236, 72, 153, 0.05) 100%); border: 1px solid rgba(139, 92, 246, 0.2); cursor: pointer;">
+       <div class="w-16 h-16 rounded-xl bg-gradient-vibrant flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"><span class="text-2xl">🧠</span>
+       </div>
+       <h3 id="service-1-title" class="font-heading text-2xl font-bold text-white mb-4">Hipnoterapi Klinis</h3>
+       <p class="text-gray-400 mb-6">Teknik hipnoterapi profesional untuk mengatasi masalah psikologis, kebiasaan buruk, dan peningkatan performa mental.</p>
+       <ul class="space-y-3 text-sm text-gray-300">
+        <li class="flex items-center"><span class="w-2 h-2 rounded-full bg-purple-400 mr-3"></span> Berhenti Merokok</li>
+        <li class="flex items-center"><span class="w-2 h-2 rounded-full bg-purple-400 mr-3"></span> Manajemen Berat Badan</li>
+        <li class="flex items-center"><span class="w-2 h-2 rounded-full bg-purple-400 mr-3"></span> Peningkatan Fokus</li>
+       </ul>
+      </div><!-- Service 2 -->
+      <div class="card-tilt group rounded-2xl p-8 transition-all duration-500" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1) 0%, rgba(245, 158, 11, 0.05) 100%); border: 1px solid rgba(236, 72, 153, 0.2); cursor: pointer;">
+       <div class="w-16 h-16 rounded-xl bg-gradient-vibrant flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"><span class="text-2xl">💭</span>
+       </div>
+       <h3 id="service-2-title" class="font-heading text-2xl font-bold text-white mb-4">Konseling Psikologi</h3>
+       <p class="text-gray-400 mb-6">Sesi konseling profesional untuk memahami dan mengatasi permasalahan emosional, relasi, dan pengembangan diri.</p>
+       <ul class="space-y-3 text-sm text-gray-300">
+        <li class="flex items-center"><span class="w-2 h-2 rounded-full bg-pink-400 mr-3"></span> Konseling Individu</li>
+        <li class="flex items-center"><span class="w-2 h-2 rounded-full bg-pink-400 mr-3"></span> Konseling Keluarga</li>
+        <li class="flex items-center"><span class="w-2 h-2 rounded-full bg-pink-400 mr-3"></span> Konseling Pasangan</li>
+       </ul>
+      </div><!-- Service 3 -->
+      <div class="card-tilt group rounded-2xl p-8 transition-all duration-500" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%); border: 1px solid rgba(245, 158, 11, 0.2); cursor: pointer;">
+       <div class="w-16 h-16 rounded-xl bg-gradient-vibrant flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"><span class="text-2xl">🛡️</span>
+       </div>
+       <h3 id="service-3-title" class="font-heading text-2xl font-bold text-white mb-4">Terapi Trauma &amp; PTSD</h3>
+       <p class="text-gray-400 mb-6">Penanganan khusus untuk trauma masa lalu dengan pendekatan aman, efektif, dan berbasis bukti ilmiah.</p>
+       <ul class="space-y-3 text-sm text-gray-300">
+        <li class="flex items-center"><span class="w-2 h-2 rounded-full bg-amber-400 mr-3"></span> Inner Child Healing</li>
+        <li class="flex items-center"><span class="w-2 h-2 rounded-full bg-amber-400 mr-3"></span> Trauma Release</li>
+        <li class="flex items-center"><span class="w-2 h-2 rounded-full bg-amber-400 mr-3"></span> Emotional Healing</li>
+       </ul>
+      </div><!-- Service 4 -->
+      <div class="card-tilt group rounded-2xl p-8 transition-all duration-500" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(236, 72, 153, 0.05) 100%); border: 1px solid rgba(139, 92, 246, 0.2);">
+       <div class="w-16 h-16 rounded-xl bg-gradient-vibrant flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"><span class="text-2xl">⚡</span>
+       </div>
+       <h3 class="font-heading text-2xl font-bold text-white mb-4">Terapi Kecemasan</h3>
+       <p class="text-gray-400 mb-6">Penanganan profesional untuk gangguan kecemasan, serangan panik, dan berbagai jenis fobia dengan hasil terukur.</p>
+       <ul class="space-y-3 text-sm text-gray-300">
+        <li class="flex items-center"><span class="w-2 h-2 rounded-full bg-purple-400 mr-3"></span> Social Anxiety</li>
+        <li class="flex items-center"><span class="w-2 h-2 rounded-full bg-purple-400 mr-3"></span> Panic Disorder</li>
+        <li class="flex items-center"><span class="w-2 h-2 rounded-full bg-purple-400 mr-3"></span> Specific Phobias</li>
+       </ul>
+      </div><!-- Service 5 -->
+      <div class="card-tilt group rounded-2xl p-8 transition-all duration-500" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1) 0%, rgba(245, 158, 11, 0.05) 100%); border: 1px solid rgba(236, 72, 153, 0.2);">
+       <div class="w-16 h-16 rounded-xl bg-gradient-vibrant flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"><span class="text-2xl">😴</span>
+       </div>
+       <h3 class="font-heading text-2xl font-bold text-white mb-4">Terapi Insomnia</h3>
+       <p class="text-gray-400 mb-6">Solusi efektif untuk masalah tidur dan insomnia dengan teknik relaksasi mendalam dan hipnoterapi.</p>
+       <ul class="space-y-3 text-sm text-gray-300">
+        <li class="flex items-center"><span class="w-2 h-2 rounded-full bg-pink-400 mr-3"></span> Sleep Therapy</li>
+        <li class="flex items-center"><span class="w-2 h-2 rounded-full bg-pink-400 mr-3"></span> Relaxation Technique</li>
+        <li class="flex items-center"><span class="w-2 h-2 rounded-full bg-pink-400 mr-3"></span> Stress Management</li>
+       </ul>
+      </div><!-- Service 6 -->
+      <div class="card-tilt group rounded-2xl p-8 transition-all duration-500" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%); border: 1px solid rgba(245, 158, 11, 0.2);">
+       <div class="w-16 h-16 rounded-xl bg-gradient-vibrant flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"><span class="text-2xl">🚀</span>
+       </div>
+       <h3 class="font-heading text-2xl font-bold text-white mb-4">Pengembangan Diri</h3>
+       <p class="text-gray-400 mb-6">Program transformasi diri untuk meningkatkan kepercayaan diri, motivasi, dan mengaktualisasikan potensi maksimal.</p>
+       <ul class="space-y-3 text-sm text-gray-300">
+        <li class="flex items-center"><span class="w-2 h-2 rounded-full bg-amber-400 mr-3"></span> Confidence Building</li>
+        <li class="flex items-center"><span class="w-2 h-2 rounded-full bg-amber-400 mr-3"></span> Goal Achievement</li>
+        <li class="flex items-center"><span class="w-2 h-2 rounded-full bg-amber-400 mr-3"></span> Peak Performance</li>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </section><!-- About Section -->
+   <section id="tentang" class="py-20 sm:py-32 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div>
+       <p class="text-purple-400 text-sm font-semibold uppercase tracking-widest mb-4">Tentang Kami</p>
+       <h2 class="font-heading text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-8">Kepercayaan &amp; Keahlian</h2>
+       <p class="text-lg text-gray-300 mb-6">Praktek Hipnoterapi Aribowo adalah klinik psikologi terdepan yang menyediakan jasa hipnoterapi dan layanan konseling berkualitas tinggi di Batam.</p>
+       <p class="text-lg text-gray-300 mb-12">Dengan lebih dari 10 tahun pengalaman dalam penyembuhan psikologis, kami berkomitmen membantu setiap klien mencapai kesehatan mental optimal melalui pendekatan holistik dan berbasis bukti ilmiah terkini.</p>
+       <div class="space-y-5">
+        <div class="flex items-start space-x-4">
+         <div class="w-12 h-12 rounded-lg bg-gradient-vibrant flex items-center justify-center flex-shrink-0 mt-1"><span class="text-lg">✓</span>
+         </div>
+         <div>
+          <h4 class="font-semibold text-white text-lg mb-1">Hipnoterapis Bersertifikat Internasional</h4>
+          <p class="text-gray-400 text-sm">Tersertifikasi dari lembaga hipnoterapi nasional dan internasional terkemuka</p>
+         </div>
+        </div>
+        <div class="flex items-start space-x-4">
+         <div class="w-12 h-12 rounded-lg bg-gradient-vibrant flex items-center justify-center flex-shrink-0 mt-1"><span class="text-lg">✓</span>
+         </div>
+         <div>
+          <h4 class="font-semibold text-white text-lg mb-1">Kerahasiaan 100% Terjamin</h4>
+          <p class="text-gray-400 text-sm">Privasi klien adalah prioritas utama dengan standar etika profesional tertinggi</p>
+         </div>
+        </div>
+        <div class="flex items-start space-x-4">
+         <div class="w-12 h-12 rounded-lg bg-gradient-vibrant flex items-center justify-center flex-shrink-0 mt-1"><span class="text-lg">✓</span>
+         </div>
+         <div>
+          <h4 class="font-semibold text-white text-lg mb-1">Lokasi Strategis di Batam</h4>
+          <p class="text-gray-400 text-sm">Mudah dijangkau dari seluruh wilayah Batam dengan fasilitas modern dan nyaman</p>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="relative">
+       <div class="relative rounded-3xl overflow-hidden p-8 sm:p-12 pulse-glow" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.2) 0%, rgba(236, 72, 153, 0.1) 100%); border: 2px solid rgba(139, 92, 246, 0.3);">
+        <div class="text-center">
+         <div class="w-40 h-40 mx-auto rounded-full flex items-center justify-center mb-8 overflow-hidden border-4 border-purple-500" style="background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%);">
+          <!-- FOTO SUDAH DIPERBARUI DI SINI -->
+          <img src="https://iili.io/q33YMiX.th.jpg" alt="Aribowo Hipnoterapis" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+         </div>
+         <h3 class="font-heading text-3xl font-bold text-white mb-2">Aribowo</h3>
+         <p class="text-purple-400 font-semibold mb-6">Certified Hypnotherapist &amp; Psychologist</p>
+         <div class="flex justify-center gap-3 mb-8 flex-wrap"><span class="px-4 py-2 rounded-full text-xs font-semibold text-purple-400" style="background: rgba(139, 92, 246, 0.2); border: 1px solid rgba(139, 92, 246, 0.5);">CHt (Certified Specialist)</span> <span class="px-4 py-2 rounded-full text-xs font-semibold text-pink-400" style="background: rgba(236, 72, 153, 0.2); border: 1px solid rgba(236, 72, 153, 0.5);">NLP</span> <span class="px-4 py-2 rounded-full text-xs font-semibold text-amber-400" style="background: rgba(245, 158, 11, 0.2); border: 1px solid rgba(245, 158, 11, 0.5);">CBT</span>
+         </div>
+         <p class="text-gray-300 text-lg leading-relaxed italic">"Setiap orang memiliki kekuatan untuk berubah dan sembuh. Tugas saya adalah membantu Anda menemukan kekuatan tersebut dalam diri Anda sendiri."</p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Testimonials Section -->
+   <section id="testimoni" class="py-20 sm:py-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="text-center mb-16">
+      <p class="text-purple-400 text-sm font-semibold uppercase tracking-widest mb-4">Testimoni</p>
+      <h2 class="font-heading text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6">Kisah Transformasi Klien</h2>
+      <p class="text-lg text-gray-400 max-w-2xl mx-auto">Dengarkan langsung dari mereka yang telah merasakan transformasi luar biasa melalui terapi kami</p>
+     </div>
+     <div class="grid grid-cols-1 md:grid-cols-3 gap-8"><!-- Testimonial 1 -->
+      <div class="group rounded-2xl p-8 transition-all hover:scale-105" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(236, 72, 153, 0.05) 100%); border: 1px solid rgba(139, 92, 246, 0.2);">
+       <div class="flex gap-1 mb-6"><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span>
+       </div>
+       <p class="text-gray-300 mb-8 leading-relaxed">"Setelah 3 sesi hipnoterapi, saya berhasil berhenti merokok setelah 15 tahun. Pak Aribowo sangat profesional dan membuat saya merasa nyaman. Terapi benar-benar mengubah hidup saya!"</p>
+       <div class="flex items-center gap-4">
+        <div class="w-14 h-14 rounded-full bg-gradient-vibrant flex items-center justify-center text-white font-bold text-lg">
+         F
+        </div>
+        <div>
+         <h4 class="font-semibold text-white">Fikri</h4>
+         <p class="text-sm text-gray-400">Pengusaha, Batam</p>
+        </div>
+       </div>
+      </div><!-- Testimonial 2 -->
+      <div class="group rounded-2xl p-8 transition-all hover:scale-105" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1) 0%, rgba(245, 158, 11, 0.05) 100%); border: 1px solid rgba(236, 72, 153, 0.2);">
+       <div class="flex gap-1 mb-6"><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span>
+       </div>
+       <p class="text-gray-300 mb-8 leading-relaxed">"Trauma masa kecil yang menghantui saya selama bertahun-tahun akhirnya bisa saya lepaskan. Terima kasih atas kesabaran dan keahlian Pak Aribowo dalam proses penyembuhan saya."</p>
+       <div class="flex items-center gap-4">
+        <div class="w-14 h-14 rounded-full bg-gradient-vibrant flex items-center justify-center text-white font-bold text-lg">
+         S
+        </div>
+        <div>
+         <h4 class="font-semibold text-white">Sari Dewi</h4>
+         <p class="text-sm text-gray-400">Guru, Batam Center</p>
+        </div>
+       </div>
+      </div><!-- Testimonial 3 -->
+      <div class="group rounded-2xl p-8 transition-all hover:scale-105" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%); border: 1px solid rgba(245, 158, 11, 0.2);">
+       <div class="flex gap-1 mb-6"><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span>
+       </div>
+       <p class="text-gray-300 mb-8 leading-relaxed">"Kecemasan dan serangan panik yang sering menyerang saya kini sudah sangat berkurang. Sangat terbantu dengan teknik-teknik yang diajarkan Pak Aribowo. Praktik terbaik di Batam!"</p>
+       <div class="flex items-center gap-4">
+        <div class="w-14 h-14 rounded-full bg-gradient-vibrant flex items-center justify-center text-white font-bold text-lg">
+         R
+        </div>
+        <div>
+         <h4 class="font-semibold text-white">Rini Agustina</h4>
+         <p class="text-sm text-gray-400">Karyawan Swasta, Nagoya</p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Contact Section -->
+   <section id="kontak" class="py-20 sm:py-32 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-20">
+     <div class="absolute top-0 right-0 w-96 h-96 rounded-full" style="background: radial-gradient(circle, #EC4899 0%, transparent 70%); filter: blur(80px);"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div>
+       <p class="text-purple-400 text-sm font-semibold uppercase tracking-widest mb-4">Hubungi Kami</p>
+       <h2 class="font-heading text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-8">Mulai Transformasi Anda</h2>
+       <p class="text-lg text-gray-300 mb-12">Jangan biarkan tantangan psikologis menghambat potensi Anda. Hubungi kami sekarang untuk konsultasi dan rasakan perbedaannya.</p>
+       <div class="space-y-8">
+        <div class="flex gap-6 items-start">
+         <div class="w-16 h-16 rounded-xl bg-gradient-vibrant flex items-center justify-center flex-shrink-0"><span class="text-2xl">📞</span>
+         </div>
+         <div>
+          <h4 class="font-semibold text-white text-lg mb-2">Telepon / WhatsApp</h4>
+          <p id="contact-phone" class="text-purple-400 font-semibold text-lg">Jadwalkan Konsultasi pada Formulir → </p>
+          <p class="text-sm text-gray-400">Senin - Sabtu, 09:00 - 20:00 WIB</p>
+         </div>
+        </div>
+        <div class="flex gap-6 items-start">
+         <div class="w-16 h-16 rounded-xl bg-gradient-vibrant flex items-center justify-center flex-shrink-0"><span class="text-2xl">📍</span>
+         </div>
+         <div>
+          <h4 class="font-semibold text-white text-lg mb-2">Alamat</h4>
+          <p id="contact-address" class="text-gray-300 font-semibold">Batam, Kepulauan Riau</p>
+          <p class="text-sm text-gray-400">Indonesia</p>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="rounded-2xl p-10" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(236, 72, 153, 0.05) 100%); border: 2px solid rgba(139, 92, 246, 0.3);">
+       <h3 class="font-heading text-2xl font-bold text-white mb-8">Jadwalkan Konsultasi </h3>
+       <form id="contact-form" class="space-y-6">
+        <div><label for="name" class="block text-sm font-semibold text-gray-300 mb-3">Nama Lengkap</label> <input type="text" id="name" name="name" required class="w-full px-5 py-3 rounded-lg bg-gray-900 border border-purple-500 border-opacity-30 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all" placeholder="Masukkan nama Anda">
+        </div>
+        <div><label for="phone" class="block text-sm font-semibold text-gray-300 mb-3">Nomor WhatsApp</label> <input type="tel" id="phone" name="phone" required class="w-full px-5 py-3 rounded-lg bg-gray-900 border border-purple-500 border-opacity-30 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all" placeholder="08xxxxxxxxxx">
+        </div>
+        <div><label for="service" class="block text-sm font-semibold text-gray-300 mb-3">Layanan yang Dibutuhkan</label> <select id="service" name="service" required class="w-full px-5 py-3 rounded-lg bg-gray-900 border border-purple-500 border-opacity-30 text-white focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all"> <option value="" class="bg-gray-900">Pilih layanan...</option> <option value="hipnoterapi" class="bg-gray-900">Hipnoterapi Klinis</option> <option value="konseling" class="bg-gray-900">Konseling Psikologi</option> <option value="trauma" class="bg-gray-900">Terapi Trauma &amp; PTSD</option> <option value="kecemasan" class="bg-gray-900">Terapi Kecemasan &amp; Fobia</option> <option value="insomnia" class="bg-gray-900">Terapi Insomnia</option> <option value="pengembangan" class="bg-gray-900">Pengembangan Diri</option> <option value="lainnya" class="bg-gray-900">Lainnya</option> </select>
+        </div>
+        <div><label for="message" class="block text-sm font-semibold text-gray-300 mb-3">Ceritakan Masalah Anda (Opsional)</label> <textarea id="message" name="message" rows="4" class="w-full px-5 py-3 rounded-lg bg-gray-900 border border-purple-500 border-opacity-30 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all resize-none" placeholder="Ceritakan secara singkat masalah yang ingin Anda atasi..."></textarea>
+        </div><button type="submit" class="w-full py-4 rounded-xl bg-gradient-vibrant text-white font-bold text-lg transition-all hover:scale-105 hover:shadow-2xl"> Hubungi Sekarang via WhatsApp </button>
+        <p class="text-center text-sm text-gray-400">Konsultasi Segera <span class="text-purple-400 font-semibold">UNTUK PEMULIHAN ANDA</span> • Kerahasiaan terjamin 100%</p>
+       </form>
+      </div>
+     </div>
+    </div>
+   </section><!-- CTA Section -->
+   <section class="py-16 sm:py-24 gradient-vibrant">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+     <h2 class="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">Siap Mengubah Hidup Anda?</h2>
+     <p class="text-lg text-white text-opacity-90 mb-10">Jangan tunda lagi. Ambil langkah pertama menuju transformasi mental dan emosional yang Anda impikan.</p><a href="#kontak" class="inline-block px-10 py-4 rounded-xl bg-white text-transparent bg-gradient-vibrant bg-clip-text font-bold text-lg transition-all hover:scale-105 hover:shadow-2xl border-2 border-white"> Konsultasikan Masalah Anda Sekarang → </a>
+    </div>
+   </section><!-- Footer -->
+   <footer class="py-12 border-t" style="background: linear-gradient(135deg, #0F0F1E 0%, #1a0933 100%); border-color: rgba(139, 92, 246, 0.1);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+      <div>
+       <div class="flex items-center gap-3 mb-6">
+        <div class="w-12 h-12 rounded-xl bg-gradient-vibrant flex items-center justify-center"><span class="font-heading text-xl font-bold text-transparent bg-gradient-vibrant bg-clip-text">A</span>
+        </div><span class="font-heading font-bold text-xl text-white">Aribowo</span>
+       </div>
+       <p class="text-gray-400 text-sm leading-relaxed">Klinik psikologi profesional dengan fokus pada penyembuhan holistik dan transformasi mental jangka panjang.</p>
+      </div>
+      <div>
+       <h4 class="font-semibold text-white mb-6">Layanan Utama</h4>
+       <ul class="space-y-3 text-sm text-gray-400">
+        <li class="hover:text-purple-400 transition-colors">Hipnoterapi Klinis</li>
+        <li class="hover:text-purple-400 transition-colors">Konseling Psikologi</li>
+        <li class="hover:text-purple-400 transition-colors">Terapi Trauma</li>
+        <li class="hover:text-purple-400 transition-colors">Pengembangan Diri</li>
+       </ul>
+      </div>
+      <div>
+       <h4 class="font-semibold text-white mb-6">Lokasi</h4>
+       <p class="text-gray-400 text-sm mb-4">Batam, Kepulauan Riau</p>
+       <div class="flex gap-3"><a href="#" class="w-10 h-10 rounded-lg bg-purple-500 bg-opacity-10 flex items-center justify-center hover:bg-opacity-20 transition-all"> <span class="text-purple-400">f</span> </a> <a href="#" class="w-10 h-10 rounded-lg bg-purple-500 bg-opacity-10 flex items-center justify-center hover:bg-opacity-20 transition-all"> <span class="text-purple-400">in</span> </a>
+       </div>
+      </div>
+     </div>
+     <div class="pt-8 border-t text-center" style="border-color: rgba(139, 92, 246, 0.1);">
+      <p class="text-gray-500 text-sm">© 2026 Praktek Hipnoterapi Aribowo. Semua hak dilindungi. Batam, Indonesia.</p>
+     </div>
+    </div>
+   </footer>
+  </div>
+  <script>
+const defaultConfig = {
+practice_name: 'Praktek Hipnoterapi Aribowo',
+tagline: 'Solusi Penyembuhan Psikologis Profesional',
+phone_number: 'Jadwalkan Konseling anda',
+address: 'Batam, Kepulauan Riau',
+service_1: 'Hipnoterapi Klinis',
+service_2: 'Konseling Psikologi',
+service_3: 'Terapi Trauma',
+primary_color: '#8B5CF6',
+accent_color: '#EC4899',
+font_family: 'DM Serif Display',
+font_size: 16
+};
+
+// Mobile menu
+const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+
+mobileMenuBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden');
+});
+
+mobileMenu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden');
+  });
+});
+
+// Form submission
+const contactForm = document.getElementById('contact-form');
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const name = document.getElementById('name').value;
+  const phone = document.getElementById('phone').value;
+  const service = document.getElementById('service').value;
+  const message = document.getElementById('message').value;
+
+  const whatsappNumber = '6285172029042'; // Ganti dengan nomor WhatsApp yang benar
+  const text = `Halo, saya ingin konsultasi.%0A%0A*Nama:* ${name}%0A*Nomor:* ${phone}%0A*Layanan:* ${service}%0A*Pesan:* ${message}`;
+  const url = `https://wa.me/${whatsappNumber}?text=${text}`;
+
+  window.open(url, '_blank');
+  contactForm.reset();
+});
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
+
+// SDK
+async function onConfigChange(config) {
+  const practiceName = config.practice_name || defaultConfig.practice_name;
+  const tagline = config.tagline || defaultConfig.tagline;
+  const phoneNumber = config.phone_number || defaultConfig.phone_number;
+  const address = config.address || defaultConfig.address;
+  const service1 = config.service_1 || defaultConfig.service_1;
+  const service2 = config.service_2 || defaultConfig.service_2;
+  const service3 = config.service_3 || defaultConfig.service_3;
+
+  document.getElementById('nav-title').textContent = practiceName.split(' ').pop();
+  document.getElementById('hero-title').textContent = `Transformasi Pikiran Anda`;
+  document.getElementById('hero-tagline').textContent = tagline;
+  document.getElementById('contact-phone').textContent = phoneNumber;
+  document.getElementById('contact-address').textContent = address;
+  document.getElementById('service-1-title').textContent = service1;
+  document.getElementById('service-2-title').textContent = service2;
+  document.getElementById('service-3-title').textContent = service3;
+}
+
+function mapToCapabilities(config) {
+  return {
+    recolorables: [
+      {
+        get: () => config.primary_color || defaultConfig.primary_color,
+        set: (value) => {
+          config.primary_color = value;
+          if (window.elementSdk) window.elementSdk.setConfig({ primary_color: value });
+        }
+      },
+      {
+        get: () => config.accent_color || defaultConfig.accent_color,
+        set: (value) => {
+          config.accent_color = value;
+          if (window.elementSdk) window.elementSdk.setConfig({ accent_color: value });
+        }
+      }
+    ],
+    borderables: [],
+    fontEditable: {
+      get: () => config.font_family || defaultConfig.font_family,
+      set: (value) => {
+        config.font_family = value;
+        if (window.elementSdk) window.elementSdk.setConfig({ font_family: value });
+      }
+    },
+    fontSizeable: {
+      get: () => config.font_size || defaultConfig.font_size,
+      set: (value) => {
+        config.font_size = value;
+        if (window.elementSdk) window.elementSdk.setConfig({ font_size: value });
+      }
+    }
+  };
+}
+
+function mapToEditPanelValues(config) {
+  return new Map([
+    ['practice_name', config.practice_name || defaultConfig.practice_name],
+    ['tagline', config.tagline || defaultConfig.tagline],
+    ['phone_number', config.phone_number || defaultConfig.phone_number],
+    ['address', config.address || defaultConfig.address],
+    ['service_1', config.service_1 || defaultConfig.service_1],
+    ['service_2', config.service_2 || defaultConfig.service_2],
+    ['service_3', config.service_3 || defaultConfig.service_3],
+    ['primary_color', config.primary_color || defaultConfig.primary_color],
+    ['accent_color', config.accent_color || defaultConfig.accent_color]
+  ]);
+}
+
+if (window.elementSdk) {
+  window.elementSdk.init({
+    defaultConfig,
+    onConfigChange,
+    mapToCapabilities,
+    mapToEditPanelValues
+  });
+}
+</script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9d0b120e40da4038',t:'MTc3MTU1OTc0OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
+```
